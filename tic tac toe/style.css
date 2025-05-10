@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fef9e7;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #333;
+    margin: 2rem 0 1rem;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: 2px solid #ddd;
+    background-color: #fff2cc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 9vmin;
+    font-weight: bold;
+    color: #d00000;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: #ffebb7;
+    transform: scale(1.05);
+}
+
+#reset,
+#newbutton {
+    padding: 0.8rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    background-color: #f76c6c;
+    color: white;
+    cursor: pointer;
+    margin: 1.5rem 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#reset:hover,
+#newbutton:hover {
+    background-color: #ff4e4e;
+    transform: scale(1.05);
+}
+
+.msgCont {
+    min-height: 100vmin;
+    font-size: 5vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#msg {
+    color: #ff9100;
+    font-size: 5vmin;
+    font-weight: 600;
+}
+
+.hide {
+    display: none;
+}
